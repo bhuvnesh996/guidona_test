@@ -20,7 +20,7 @@ A RESTful API for managing bank branches with features like pagination, searchin
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/branch-api.git
+   git clone git@github.com:bhuvnesh996/guidona_test.git
    cd branch-api
 Install dependencies:
 
