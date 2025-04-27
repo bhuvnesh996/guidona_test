@@ -1,0 +1,95 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Branch API",
+      "version": "1.0.0",
+      "description": "API for managing bank branches"
+    },
+    "servers": [
+      {
+        "url": "http://localhost:3000",
+        "description": "Development server"
+      }
+    ],
+    "components": {
+      "schemas": {
+        "Branch": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer",
+              "example": 1
+            },
+            "branchCode": {
+              "type": "string",
+              "example": "BR001"
+            },
+            "branchName": {
+              "type": "string",
+              "example": "Main Branch"
+            },
+            "branchAddress": {
+              "type": "string",
+              "example": "123 Main St"
+            },
+            "branchCity": {
+              "type": "string",
+              "example": "Mumbai"
+            },
+            "branchState": {
+              "type": "string",
+              "example": "Maharashtra"
+            },
+            "branchCountry": {
+              "type": "string",
+              "example": "India"
+            },
+            "latitude": {
+              "type": "number",
+              "format": "float",
+              "example": 19.0760
+            },
+            "longitude": {
+              "type": "number",
+              "format": "float",
+              "example": 72.8777
+            },
+            "createdAt": {
+              "type": "string",
+              "format": "date-time",
+              "example": "2023-05-01T12:00:00Z"
+            }
+          }
+        },
+        "Pagination": {
+          "type": "object",
+          "properties": {
+            "total": {
+              "type": "integer",
+              "example": 12
+            },
+            "totalPages": {
+              "type": "integer",
+              "example": 2
+            },
+            "currentPage": {
+              "type": "integer",
+              "example": 1
+            },
+            "pageSize": {
+              "type": "integer",
+              "example": 10
+            },
+            "hasNextPage": {
+              "type": "boolean",
+              "example": true
+            },
+            "hasPreviousPage": {
+              "type": "boolean",
+              "example": false
+            }
+          }
+        }
+      }
+    }
+  }
